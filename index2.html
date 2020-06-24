@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>상세페이지</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+	<style type="text/css">
+		*{margin: 0;
+			padding: 0;
+    		font-family: 'Noto Sans KR', sans-serif;}
+
+    	.f-bar ul {list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				
+  				background-color: white;
+  				text-align: center;}
+
+		.f-bar li a {display: inline-block;
+  				  text-align: center;
+  				  padding: 16px 0px 12px 0px;
+  				  text-decoration: none;
+  				  }
+
+ 		 .f-bar img{width: 55%;}
+
+  		.navigation {position: relative; height: 45px; width:100%;
+  					border: 2px solid #e7e7e7;}
+
+ 		 .navigation ul {width:100%; text-align: center;
+                  padding-right: 10px;}
+
+ 		.navigation ul li {
+                      display: inline-block;
+                        padding: 8px 16px;
+                                           }
+ 		 .navigation ul li a {
+		    color: #8a8a8a;
+		    text-decoration: none;
+		    font-size: 13px;
+		    font-weight: bolder;
+		  }
+
+  		.navigation .active {position: absolute;
+                      left: 25px;
+                      top: 12px;}
+
+        section{width: 100%;
+        		margin-bottom: 200px;}
+
+         .s1 {width: 100%; margin-bottom: 50px;}
+         .s1 h2 {padding:0;}
+         .s1 h3 {padding:0; text-align: left;}
+         .s1-1{font-size: 12px;
+         	color: gray;
+         	padding-top: 20px;
+         	padding-left: 10%;}
+
+        .item-wrap1 {display: flex; width: 1200px; margin: 0 auto;}
+        .item1 {width: 650px;}
+        .item1.text-item {
+        	width: 550px;
+        	padding-top:50px;
+        }
+        .item1.text-item {padding-left: 100px;}
+		.item1 img{width: 100%;
+					padding:10px; box-sizing: border-box;}
+
+		.product-title {
+			border-bottom:1px solid rgb(210,210,210);
+			padding-bottom: 40px;
+			margin-bottom:20px;
+		}
+		.product-title h1 {
+			font-size:1.5em;
+			font-weight: 300;
+			color:rgba(0,0,0,.7);
+			margin-bottom:8px;
+		}
+		.product-title h2 {
+			font-size:1.2em;
+			font-weight: 300;
+		}
+		.product-title h3 {
+
+		}
+		.product-description {
+			margin-bottom: 60px;
+
+		}
+		.product-description h3 {
+			font-size: .8rem;
+			font-weight: 300;
+			margin-bottom: 20px;
+			color:gray;
+		}
+		.product-description p {
+			font-size: .8rem;
+			color:gray;
+			font-weight: 300;
+			margin-bottom: 5px;
+		}
+		.product-description span {
+			font-weight: 500;
+			color: black;
+
+		}
+		.product-description select {
+			border:1px solid rgb(200,200,200);
+			padding:3px;
+		}
+		.product-option{
+			margin-bottom:30px;
+		}
+		.product-option select {
+			border:1px solid rgb(200,200,200);
+			width:100%;
+			padding:3px;
+		}
+
+		.btn-wrap {display: flex;}
+		.btn-wrap div{
+			border:1px solid rgb(200,200,200);
+			flex-grow: 1;
+			text-align: center;
+			padding:10px 0;
+			margin: 2px;
+			font-size: .8em;
+			cursor: pointer;
+			transition: all .3s ease;
+		}
+		.btn-wrap div:hover {
+			background-color: black;
+			color: white;
+		}
+		.btn-wrap div:nth-child(1) {
+			color:white;
+			background-color: #4f4f4f;
+			border:none;
+		}
+		.btn-wrap div:nth-child(1):hover {
+			background-color: black;
+			color: white;
+		}
+		
+		h2{padding-left: 10%;
+		padding-top: 100px;}
+
+		.s2 {width: 1000px; margin:0 auto; text-align: center; border-bottom:1px solid #ccc; padding-bottom: 100px;}
+		.s2 h2 {text-align: left;}
+
+		h3{text-align: center;
+			padding-bottom: 50px;}
+
+		h4{text-align: center;
+			font-size: 1.2em;
+			padding-bottom: 10px;}
+		.s3 {padding-top:100px;
+			width: 1000px;
+			margin: 0 auto; text-align: center;
+			background-color: rgb(245,245,245);
+			margin-top:100px;
+		}
+		.s3 img{width: 600px;
+				padding-bottom: 30px;}
+
+		.s3 p{text-align: center;
+				padding-bottom: 150px;
+				font-weight: lighter;
+				font-size: 1em;
+				color: gray; }
+
+		.s4 {text-align: center; width: 1000px; margin: 100px auto;}
+		.s4 h3 {background-color: black; color: white; padding:0;}
+		.s4 div {display: inline-block;}
+		.s4 img{width: 400px;}
+
+		.item-wrap2 {
+					text-align: center;}
+
+		.item-wrap2 p{font-size: 1em; display: inline-block; margin: 0 30px;}
+
+		h5{text-align: center;
+			font-size: 1.2em;
+			font-weight: 500;
+			padding-top:100px;
+			}
+
+		.s5 {text-align: center;
+			width: 1000px; margin: 0 auto;}
+
+		.s5 img{width: 650px;
+				padding-top: 150px;
+				padding-bottom: 10px;
+			}
+		.s6 {
+			text-align: center; width: 1000px; margin: 200px auto;
+		}
+		.s6 img{width: 900px;}
+
+		.s7-1{padding-left: 20%;}
+		.s7 p{font-size: 1.5em;
+				color: gray;
+				padding-bottom: 50px;}
+
+		h6{font-size: 1em;
+			color: gray;
+			padding-bottom: 10px;}
+
+		.s7 li{color: gray;
+				font-size: 11px;
+				list-style: inside;
+				}
+		.s7 ul{padding-bottom: 30px;}
+
+
+		footer {width: 100%;}
+		footer img{width: 100%;}
+
+
+
+
+	</style>
+	</head>
+
+
+
+
+<body>
+	<div class="f-bar">
+	<ul>
+	<li>
+    <a href="index.html">
+    <img src="logo.png">
+    </a>
+  </li>
+	</ul>
+	</div>
+
+	<div class="navigation">
+	<ul>
+  <li>
+    <a class="active" href="index1.html">
+    <img src="3bar.png" style="width: 20px;height: 20px;">
+  </a>
+	</li>
+  <li><a href="#news">ABOUT</a></li>
+  <li><a href="#news">SHOP</a></li>
+  <li><a href="#contact">ON SALE</a></li>
+  <li><a href="#about">INSIDE</a></li>
+  <li><a href="#about">C/S CENTER</a></li>
+  <li><a href="#about">이벤트/컬렉션</a></li>
+  <li><a href="#about">제로그래머라운지</a></li>
+	</ul>
+	</div>
+
+<section class="s1">
+	<p class="s1-1">Home  >  의류  >  재킷/후디</p>
+	<div class="item-wrap1">
+		<div class="item1">
+				<img src="img22.png">
+		</div>
+		<div class="item1 text-item">
+			<div class="product-title">
+				<h1>슬로그램 X 디스이즈네버댓 윈드 자켓</h1>
+				<h2>98,000 원</h2>	
+			</div>
+			<div class="product-description">
+				<h3>초경량 패커블 방품 자켓</h3>
+				<p><span>원산지</span> 베트남</p>
+				<p><span>배송지</span> 무료</p>
+				<select>
+					<option>택배</option>
+					<option>방문수령</option>
+				</select>
+			</div>
+			<div class="product-option">
+				<p>Color *</p>
+				<select>
+					<option>Color (필수)</option>
+					<option>Niagara</option>
+					<option>Olive Branch</option>
+				</select>
+			</div>
+			<div class="product-option">
+				<p>Size *</p>
+				<select>
+					<option>Size (필수)</option>
+					<option>S</option>
+					<option>M</option>
+					<option>L</option>
+					<option>XL</option>
+					<option>XXL</option>
+				</select>
+			</div>
+			<div class="btn-wrap">
+				<div>구매하기</div>
+				<div>장바구니</div>
+				<div>♡2625</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="s2">
+	<div class="btn-wrap">
+				<div>상세정보</div>
+				<div>구매평</div>
+				<div>Q&A</div>
+			</div>
+
+	<h2>| 쇼핑몰 알뜰 사용법!</h2>
+	<img src="img24.jpg">
+	<img src="img25.jpg">
+</section>
+
+<section class="s3">
+	<h3>FEATURES 01</h3>
+	<img src="img26.jpg">
+	<h4>초경량, 3계절 바람막이 자켓</h4>
+	<p>남성용 90g, 여성용 80g으로 초경량 바람막이 자켓입니다</p>
+
+	<h3>FEATURES 02</h3>
+	<img src="img27.jpg">
+	<h4>한 줌에 불과한 휴대 사이즈</h4>
+	<p>패킹 사이즈가 핸드폰 사이즈와 비슷하여 휴대하기 편리합니다</p>
+
+	<h3>FEATURES 03</h3>
+	<img src="img28.jpg">
+	<h4>바람에 의한 체온 손실을 효과적으로 막아주는 아노락 스타일</h4>
+	<p>입고 벗기 편한 아노락 스타일로, 바람을 효과적으로 차단 합니다</p>
+
+	<h3>FEATURES 04</h3>
+	<img src="img29.jpg">
+	<h4>바람의 유입을 차단하는 후드, 소매, 밑단 부위의 엘라스틱 밴드</h4>
+	<p>몸에 알맞게 조이는 엘라스틱 밴드가 바람의 유입을 차단합니다</p>
+
+	<h3>FEATURES 05</h3>
+	<img src="img30.jpg">
+	<h4>체온조절을 위한 암핏 벤틸레이션 기능</h4>
+	<p>바람은 막아주고 땀 배출은 신속하게 도와줍니다</p>
+
+	<h3>FEATURES 06</h3>
+	<img src="img31.jpg">
+	<h4>주머니를 이용한 패커블 기능으로 압축 및 편리한 휴대성</h4>
+	<p>주머니를 이용해 컴팩트하게 패킹하면 더 편하게 사용할 수 있어요</p>
+
+</section>
+
+
+<section class="s4">
+	<h3>PRODUCT COLOR</h3>
+	<div>
+		<img src="img32.jpg">
+		<p>Niagara</p>	
+	</div>
+	<div>
+		<img src="img33.jpg">
+		<p>Olive Branch</p>	
+	</div>
+</section>
+
+<section class="s5">
+	<h5>일반인 모델 착용 예시</h5>
+	<img src="img36.png">
+	<p>남성 175cm</p>
+	<img src="img37.png">
+	<p>남성 180cm</p>
+	<img src="img38.png">
+	<p>여성 160cm</p>
+	<img src="img39.png">
+	<p>여성 163cm</p>
+	<img src="img40.png">
+	<p>여성 165cm</p>
+</section>
+
+<section class="s6">
+	<img src="img34.png">
+	<br>
+	<br>
+	<br>
+	<img src="img35.png">
+</section>
+
+<section class="s7">
+	<div class="s7-1">
+	<p>| A/S 및 교환</p>
+	<h6>교환/반품 안내</h6>
+	<ul>
+	<li>제품 훼손이 없는 경우 제품을 받은 날로부터 7일 이내 교환 및 반품이 가능하며, 배송비는 고객님이 부담합니다.</li>
+	<li>제품의 불량 및 파손, 오발송된 제품을 받으신 경우 교환 및 반품이 가능하며, 배송비는 본사에서 부담합니다.</li>
+	<li>상품에 하자가 없거나 상품의 사이즈/색상 변경 및 고객님 변심이나 과실에 따른 교환, 반품시에는 왕복 택배비는 고객님이 부담합니다.</li>
+	</ul>
+	<h6>교환/반품이 불가능한 경우 안내</h6>
+	<ul>
+		<li>제품을 받은 날로부터 7일이 경과했을 경우</li>
+		<li>고객님의 과실로 제품의 멸실 또는 훼손된 경우</li>
+		<li>제품의 개봉으로 상품의 가치를 상실한 경우</li>
+
+	</ul>
+	<h6>A/S 절차 안내</h6>
+	<ul>
+		<li>A/S를 접수한 후 제품을 고객센터로 보내주십시오.</li>
+		<li>제품을 보내실 때는 성함/연락처와 함께  A/S 요청내용을 메모에 적어 동봉해주십시오.</li>
+		<li>제품을 받으면 A/S 담당자가 제품을 확인한 후 고객님께 A/S 요청내용 및 비용을 안내해드립니다.</li>
+		<li>요청내용을 확인한 후 본사, 또는 전문수선업체에 수선을 요청합니다.</li>
+		<li>수선이 끝난 제품을 다시 확인한 후 고객님께 발송해드립니다.</li>
+		<li>A/S 제품의 배송비는 고객님이 부담합니다.</li>
+		<li>A/S 처리 기간은 단순 처리가 가능한 경우 1주, 그외 봉제 등의 수선이 필요한 경우 평균 3주가 소요됩니다.</li>
+	</ul>
+	<h6>A/S 접수 안내</h6>
+	<ul>
+		<li>방문접수: 서울 마포구 동교로25길 38 제로그램	</li>
+		<li>카카오톡 접수: 카카오톡에서 플러스 친구를 추가하신 후 1:1 상담으로 A/S를 요청해주세요. 카카오톡 ‘제로그램’</li>
+		<li>전화접수: 본사 고객센터 1644-7805로 A/S를 요청하셔도 됩니다. (상담 가능시간 11:00 ~ 18:00 점심시간 13:00 ~ 14:00)</li>
+		
+	</ul>
+	<ul>
+		<li style="padding-top: 100px;">이미지 출처: 제로그</li>
+		
+	</ul>
+	</div>
+
+</section>
+
+<footer>
+	<img src="footerimg.png">
+</footer>
+
+
+</body>
+</html>
